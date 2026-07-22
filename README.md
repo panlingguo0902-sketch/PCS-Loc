@@ -1,14 +1,14 @@
 # PCS-Loc
 rumor source
-propagation consistency-based
-rumor source localization approach
+ATechnique for Identifying Rumor Origins
+Within Communication Consistency
+Limitations
 
-PCS-Loc algorithm is designed for estimating the rumor source node in social networks. The PCS-Loc algorithm requires the following installation setup.
-
-Python 3.10 are above
-NDlib - Network Diffusion Library
-The Python code (PCS-Loc) requires the following packages to be imported
-
+The PCS-Loc algorithm is proposed to identify the rumor source node in social networks. To run the PCS-Loc algorithm, the corresponding environment configuration and library installation are required as follows.
+Prerequisites:
+Python 3.10 or higher
+NDlib (Network Diffusion Library)
+The Python implementation of PCS-Loc requires the following modules to be imported:
 import networkx as nx
 import csv
 import random
@@ -17,24 +17,14 @@ import ndlib.models.epidemics as ep
 import numpy as np
 import timeit
 from collections import deque
-This code requires an Input file (.csv format) as shown in the following format: (It has two columns such as Source and Target)
-
+The program takes a CSV file as input. This file consists of two columns named Source and Target, which describe the edges of the network. An example of the input format is displayed below:
 Source,Target
-
 1,2
-
 2,1
-
 1,3
-
 3,1
-
 2,3
-
 3,2
-
-The original source can be obtained from the simulation part (IC model).
-
-The output of the ROSE algorithm code is the estimated source, i.e., any node belongs to the graph (input_file.csv).
-
-Once the estimated source and the original source are available, we can generate Distance error, Execution time, Accuracy, Candidate sources, etc.
+The ground-truth rumor source is generated from simulations based on the IC model.
+The PCS-Loc algorithm outputs an estimated rumor source node, which must be a valid node contained in the graph defined by the input CSV file.
+With both the estimated source and ground-truth source obtained, multiple evaluation metrics can be computed, including distance error, execution time, detection accuracy, candidate source set and other results.
