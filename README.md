@@ -55,15 +55,17 @@ Academic use only. For questions: panlingguo0902@gmail.com. Contributions welcom
 
 #### Dataset Information
 
-This study uses four real-world social network datasets:
+## Dataset Information
 
-| Dataset | Nodes | Edges | Original Source | Reference |
-|---------|-------|-------|-----------------|-----------|
-| Dolphins | 62 | 159 | Lusseau et al. (2003) | [Network Repository](https://networkrepository.com/soc-dolphins.php) |
-| Football | 115 | 613 | Girvan & Newman (2002) | [UMich NetData](http://www-personal.umich.edu/~mejn/netdata/) |
-| Karate | 34 | 78 | Zachary (1977) | [UCI Network Data](https://networkdata.ics.uci.edu/data.php?id=105) |
-| Facebook | 4,039 | 88,234 | McAuley & Leskovec (2012) | [SNAP](https://snap.stanford.edu/data/ego-Facebook.html) |
-| ER (N=1000) | Random graph, p=0.005, avg deg ≈5 | Erdős & Rényi (1959) | [On random graphs I](http://ftp.math-inst.hu/~p_erdos/1959-11.pdf) |
-| BA (N=1000) | Scale-free network, m=3, avg deg ≈6 | Barabási & Albert (1999) | [Science 286(5439)](https://doi.org/10.1126/science.286.5439.509) |
+This study uses four real-world social networks and two synthetic networks:
 
-All datasets are publicly available and have been used as benchmarks in prior social network analysis research.
+| Dataset | Nodes | Edges | Original Reference | Access Link |
+|---------|-------|-------|-------------------|-------------|
+| **Dolphins** | 62 | 159 | Lusseau, D. (2003). The emergent properties of a dolphin social network. *Proceedings of the Royal Society of London. Series B: Biological Sciences*, 270(suppl_2), S186-S188. | [Network Repository](https://networkrepository.com/soc-dolphins.php) |
+| **Karate** | 34 | 78 | Zachary, W. W. (1977). An information flow model for conflict and fission in small groups. *Journal of Anthropological Research*, 33(4), 452-473. | [UCI Network Data](https://networkdata.ics.uci.edu/data.php?id=105) |
+| **Football** | 115 | 613 | Girvan, M., & Newman, M. E. J. (2002). Community structure in social and biological networks. *Proceedings of the National Academy of Sciences USA*, 99(12), 7821-7826. | [UMich NetData](http://www-personal.umich.edu/~mejn/netdata/) |
+| **Facebook** | 4,039 | 88,234 | McAuley, J., & Leskovec, J. (2012). Learning to discover social circles in ego networks. *NIPS 2012*. | [SNAP](https://snap.stanford.edu/data/ego-Facebook.html) |
+| **ER (N=1000)** | 1,000 | ~5,000 | Erdős, P., & Rényi, A. (1959). On random graphs I. *Publicationes Mathematicae Debrecen*, 6, 290-297. | [PDF](http://ftp.math-inst.hu/~p_erdos/1959-11.pdf) |
+| **BA (N=1000)** | 1,000 | ~6,000 | Barabási, A.-L., & Albert, R. (1999). Emergence of scaling in random networks. *Science*, 286(5439), 509-512. | [DOI](https://doi.org/10.1126/science.286.5439.509) |
+
+All datasets are publicly available and have been anonymized where applicable.
